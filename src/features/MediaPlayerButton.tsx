@@ -7,13 +7,11 @@ const MediaPlayerButton = () => {
   const togglePlayer = () => setIsPlaying((isPlaying) => !isPlaying);
 
   return (
-    <>
-      <Button className="btn-player" onClick={togglePlayer}>
-        <p>+</p>
-        <p>{isPlaying ? "PAUSE" : "PLAY"}</p>
-        <p className="player-duration">0:35 / 5:23</p>
-      </Button>
-    </>
+    <Button className="btn-player" onClick={togglePlayer}>
+      <p>+</p>
+      <p>{isPlaying ? "PAUSE" : "PLAY"}</p>
+      <p className="player-duration">0:35 / 5:23</p>
+    </Button>
   );
 };
 

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Button from "../components/Button";
+import Favorite from "@mui/icons-material/Favorite";
+import FavoriteBorder from "@mui/icons-material/FavoriteBorder";
 
 const LikeButton = () => {
   const [isLiked, setIsLiked] = useState(false);
@@ -17,12 +19,17 @@ const LikeButton = () => {
   };
 
   return (
-    <div className="like-counter">
-      <Button className="btn-like" onClick={increaseLikeCount}>
-        {isLiked ? "UNLIKE" : "LIKE"}
-      </Button>
+    <Button className="btn-like" onClick={increaseLikeCount}>
+      <div className="like-text">
+        {isLiked ? (
+          <Favorite color="error" sx={{ fontSize: "40px" }} />
+        ) : (
+          <FavoriteBorder sx={{ fontSize: "40px" }} />
+        )}
+        <p>{isLiked ? "LIKED" : "LIKE"}</p>
+      </div>
       <p className="like-count">{likeCount}</p>
-    </div>
+    </Button>
   );
 };
 

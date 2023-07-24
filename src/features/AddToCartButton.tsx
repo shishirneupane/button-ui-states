@@ -1,5 +1,8 @@
 import { useState } from "react";
 import Button from "../components/Button";
+import Add from "@mui/icons-material/Add";
+import Remove from "@mui/icons-material/Remove";
+import ShoppingCartOutlined from "@mui/icons-material/ShoppingCartOutlined";
 
 interface ICartCounterProps {
   cartCount: number;
@@ -20,11 +23,11 @@ const CartCounter = ({
         disabled={cartCount <= 0}
         onClick={decreaseCartCount}
       >
-        -
+        <Remove sx={{ fontSize: "40px" }} />
       </Button>
       <span>{cartCount}</span>
       <Button className="cart-counter-btn" onClick={increaseCartCount}>
-        +
+        <Add sx={{ fontSize: "40px" }} />
       </Button>
     </div>
   );
@@ -54,7 +57,8 @@ const AddToCartButton = () => {
 
   return (
     <Button className="btn-cart" onClick={increaseCartCount}>
-      ADD TO CART
+      <ShoppingCartOutlined sx={{ fontSize: "40px" }} />
+      <p>ADD TO CART</p>
     </Button>
   );
 };

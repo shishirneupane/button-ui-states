@@ -8,14 +8,17 @@
 }
 
 .btn-cart {
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 16px 32px;
   color: white;
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(27, 148, 244);
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .btn-cart:hover {
-  background-color: rgb(0, 0, 200);
+  background-color: rgb(19, 121, 202);
 }
 
 .cart-counter {
@@ -29,29 +32,34 @@
 
 .cart-counter-btn {
   background: none;
+  display: flex;
+  align-items: center;
 }
 
 /* like button */
 
-.like-counter {
+.btn-like {
   display: flex;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 8px;
   border: 1px solid rgb(128, 128, 128, 0.7);
 }
 
-.btn-like {
+.btn-like:hover {
+  background-color: rgb(128, 128, 128, 0.3);
+}
+
+.like-text {
   background: none;
   padding: 16px 32px;
   border-right: 1px solid rgb(128, 128, 128, 0.7);
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .like-count {
   padding: 16px 32px;
-}
-
-.like-counter:hover {
-  background-color: rgb(128, 128, 128, 0.2);
 }
 
 /* media player button */
