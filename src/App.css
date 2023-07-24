@@ -51,5 +51,7 @@
 .btn-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 48px;
+  font-size: 40px;
 }

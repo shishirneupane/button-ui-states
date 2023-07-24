@@ -15,7 +15,11 @@ const CartCounter = ({
 }: ICartCounterProps) => {
   return (
     <div className="cart-counter">
-      <Button className="cart-counter-btn" onClick={decreaseCartCount}>
+      <Button
+        className="cart-counter-btn"
+        disabled={cartCount <= 0}
+        onClick={decreaseCartCount}
+      >
         -
       </Button>
       <span>{cartCount}</span>

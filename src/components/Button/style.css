@@ -1,6 +1,7 @@
 /* cart button */
 
 .btn {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   border: none;
   cursor: pointer;
   font-size: 40px;
@@ -32,13 +33,26 @@
 
 /* like button */
 
-.btn-like {
+.like-counter {
+  display: flex;
+  align-items: center;
   border-radius: 4px;
-  background-color: rgb(128, 128, 128, 0.2);
+  border: 1px solid rgb(128, 128, 128, 0.7);
 }
 
-.btn-like:hover {
-  background-color: rgb(128, 128, 128, 0.3);
+.btn-like {
+  background: none;
+  padding: 16px 32px;
+  border-right: 1px solid rgb(128, 128, 128, 0.7);
+}
+
+.like-count {
+  margin: 0;
+  padding: 16px 32px;
+}
+
+.like-counter:hover {
+  background-color: rgb(128, 128, 128, 0.2);
 }
 
 /* media player button */
