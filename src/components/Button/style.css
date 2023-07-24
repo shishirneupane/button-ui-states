@@ -74,6 +74,12 @@
   gap: 32px;
 }
 
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .player-duration {
   color: rgb(150, 150, 150);
 }
