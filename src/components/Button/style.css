@@ -1,0 +1,51 @@
+/* cart button */
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.btn-cart {
+  border-radius: 4px;
+  padding: 16px 32px;
+  color: white;
+  background-color: rgb(0, 0, 255);
+}
+
+.btn-cart:hover {
+  background-color: rgb(0, 0, 200);
+}
+
+.cart-counter {
+  font-size: 40px;
+  background-color: rgb(128, 128, 128, 0.2);
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 16px 32px;
+}
+
+.cart-counter-btn {
+  background: none;
+}
+
+/* like button */
+
+.btn-like {
+  border-radius: 4px;
+  background-color: rgb(128, 128, 128, 0.2);
+}
+
+.btn-like:hover {
+  background-color: rgb(128, 128, 128, 0.3);
+}
+
+/* media player button */
+
+.btn-player {
+  padding: 16px 32px;
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+}
