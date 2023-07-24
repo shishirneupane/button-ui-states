@@ -47,7 +47,6 @@
 }
 
 .like-count {
-  margin: 0;
   padding: 16px 32px;
 }
 
@@ -59,7 +58,14 @@
 
 .btn-player {
   padding: 16px 32px;
-  background-color: black;
+  background-color: rgb(0, 0, 0, 0.8);
   color: white;
   border-radius: 40px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.player-duration {
+  color: rgb(150, 150, 150);
 }
